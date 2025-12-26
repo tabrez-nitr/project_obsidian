@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, Variants } from "motion/react";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 // --- Data ---
@@ -84,7 +84,7 @@ export default function SimpleCardCarousel() {
   }, [nextStep]);
 
   // Animation Variants
-  const variants = {
+ const variants: Variants = {
     enter: (dir: number) => ({
       x: dir > 0 ? 50 : -50,
       opacity: 0,
@@ -103,7 +103,6 @@ export default function SimpleCardCarousel() {
       transition: { duration: 0.3, ease: "easeIn" },
     }),
   };
-
   return (
     <section className="py-24 bg-white text-black">
       <div className="max-w-4xl mx-auto px-6">
