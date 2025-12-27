@@ -84,7 +84,7 @@ export default function HeroCarousel() {
       {SLIDES.map((s, i) => (
         <div
           key={s.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0  transition-opacity duration-1000 ${
             i === index ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
@@ -92,7 +92,7 @@ export default function HeroCarousel() {
             src={s.src}
             alt={`hero ${i + 1}`}
             fill
-            className="object-cover object-bottom"
+            className="object-cover  object-bottom"
             priority={i === 0}
           />
           
@@ -128,12 +128,17 @@ Restoring Warmth <br /> & Memories in <br /> Noida | Ghaziabad
           {/* CTA row (keeps fixed) */}
 
           <div className="mt-5 w-full  flex gap-3">
-            <a
-              href="tel:+911234567890"
-              className="border-1 border-yellow-100/80 px-4 py-2 rounded-2xl text-yellow-100/80"
+           
+               <a
+            href="https://wa.me/917861092110?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
+            className="border-1 border-yellow-100/80 px-4 py-2 rounded-2xl text-yellow-100/80"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
             >
               Book Now
             </a>
+           
           </div>
        
         </div>

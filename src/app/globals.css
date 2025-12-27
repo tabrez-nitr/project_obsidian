@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import 'remixicon/fonts/remixicon.css';
 
+html, body {
+  overflow-x: clip; /* 'clip' is a modern, faster version of 'hidden' that doesn't break scroll */
+  width: 100%;
+}
 
 @theme inline {
   --color-primary: #1F2937;
@@ -12,6 +16,7 @@
   --color-charcoal: #1C1C1C;
   --color-sand: #E6DDC6;
 }
+
 
 
 /* Custom property for rotation angle */

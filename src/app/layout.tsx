@@ -1,20 +1,21 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next"; // 1. Import Viewport
 import { Geist, Geist_Mono } from "next/font/google";
 import { Cedarville_Cursive } from "next/font/google";
+import FloatingButtons from "@/components/FLoatiingButtons"; // 2. Import Buttons
 import "./globals.css";
 
+// 3. Add this Viewport export to lock zoom
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   title: "Metro Sofa Repair",
   description: "Premium Sofa Makers & Repair in Noida , Greater Noida , Gurgaon",
-  keywords: ["sofa repair", "sofa makers", "sofa repair in gurgaon", "sofa makers in gurgaon"],
-  openGraph: {
-    title: "Metro Sofa Repair",
-    description: "Premium Sofa Makers & Repair in Gurgaon",
-    type: "website",
-    locale: "en_IN",
-    siteName: "Metro Sofa Repair",
-  },
+  // ... rest of metadata
 };
 
 const cedarville = Cedarville_Cursive({
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
        <body className={`${cedarville.variable}`}>
         {children}
+        <FloatingButtons /> {/* 4. Add Buttons Here */}
       </body>
     </html>
   );

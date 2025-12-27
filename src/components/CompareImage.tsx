@@ -33,20 +33,21 @@ function CompareImage() {
         </div>
       </div>
         
-       <Compare
-        // **FIX: Pass the entire image object, not just .src**
-        firstImage={afterRepair2.src}
-        secondImage={beforRepair2.src}
-        initialSliderPercentage={40}
-        className=" w-full h-[20.5rem] object-cover md:w-[35rem] md:h-[30rem] rounded-lg shadow-2xl"
-        slideMode="hover"
-      />
+     
       <Compare
         // **FIX: Pass the entire image object, not just .src**
         firstImage={afterRepair1.src}
         secondImage={beforeRepair1.src}
         initialSliderPercentage={40}
         className="w-full h-[22.5rem] md:w-[35rem] md:h-[30rem] rounded-lg shadow-2xl"
+        slideMode="hover"
+      />
+        <Compare
+        // **FIX: Pass the entire image object, not just .src**
+        firstImage={afterRepair2.src}
+        secondImage={beforRepair2.src}
+        initialSliderPercentage={40}
+        className=" w-full h-[20.5rem] object-cover md:w-[35rem] md:h-[30rem] rounded-lg shadow-2xl"
         slideMode="hover"
       />
     </div>

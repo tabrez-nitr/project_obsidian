@@ -1,69 +1,121 @@
-'use client'
+"use client";
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
 
 type AccordionProps = {
   title: string;
   content: string;
+  isOpen: boolean;
+  onClick: () => void;
 };
 
-const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Accordion: React.FC<AccordionProps> = ({ title, content, isOpen, onClick }) => {
   return (
-    <div className="rounded-2xl border border-gray-200 shadow-sm bg-white/90 hover:shadow-md transition-shadow duration-300">
+    <div
+      onClick={onClick}
+      className={`group cursor-pointer rounded-xl shadow-sm transition-all duration-300 ${
+        isOpen
+          ? "bg-white  shadow-lg shadow-amber-900/5"
+          : "bg-white border-gray-100 hover:border-amber-100 hover:shadow-md"
+      }`}
+    >
       {/* Header */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center p-5 text-left focus:outline-none"
-      >
-        <span className="text-lg font-semibold text-gray-800">{title}</span>
-        <ChevronDown
-          className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : "rotate-0"
+      <div className="flex justify-between items-center p-5 md:p-6">
+        <h3
+          className={`text-lg font-semibold transition-colors duration-300 ${
+            isOpen ? "text-amber-900" : "text-gray-800 group-hover:text-amber-800"
           }`}
-        />
-      </button>
-
-      {/* Content */}
-      <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="px-5 pb-5 text-gray-600 leading-relaxed">{content}</p>
+        >
+          {title}
+        </h3>
+        <div
+          className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-300 ${
+            isOpen ? "bg-amber-100 text-amber-700" : "bg-gray-100 text-gray-500 group-hover:bg-amber-50"
+          }`}
+        >
+          {isOpen ? <Minus size={16} /> : <Plus size={16} />}
+        </div>
       </div>
+
+      {/* Content (Smooth Animation) */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              {content}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
 
-function Faq() {
-  return (
-    <section className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mt-10 md:mt-28 mb-16">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-900">
-        Frequently Asked Questions
-      </h2>
+export default function Faq() {
+  // State to track which FAQ is open (only one at a time looks cleaner)
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <Accordion
-          title="Do you offer at-home sofa repair?"
-          content="Yes, we provide at-home repair services so you don’t have to worry about transport."
-        />
-        <Accordion
-          title="Can I choose my own fabric?"
-          content="Absolutely! We offer a wide range of premium fabrics and leathers to choose from."
-        />
-        <Accordion
-          title="Can I customise a new sofa?"
-          content="Yes, absolutely! You can get a brand-new sofa designed to match your style, size requirements, and comfort preferences."
-        />
-        <Accordion
-          title="How long does a sofa repair take?"
-          content="Most repairs are completed within 1-3 days, depending on the complexity."
-        />
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "Do you offer at-home sofa repair?",
+      answer: "Yes! We bring our workshop to your doorstep. Our team carries all necessary tools and materials to repair your sofa right in front of you, saving you transport costs and hassle.",
+    },
+    {
+      question: "Can I choose my own fabric?",
+      answer: "Absolutely. We carry a catalog of 300+ premium fabrics including Suede, Velvet, Leatherette, and Jute. You can touch and feel the samples at home before deciding.",
+    },
+    {
+      question: "Can I customise a new sofa?",
+      answer: "Yes, we specialize in custom furniture. Whether you need a specific L-shape size for a corner or a replica of a luxury design, we build it from scratch using solid wood.",
+    },
+    {
+      question: "How long does a sofa repair take?",
+      answer: "Most standard repairs (fabric change, foam refilling) are completed within 1-2 days. Complex structural repairs  might take 3-4 days.",
+    },
+  ];
+
+  return (
+    <section className="py-20 bg-gray-50/50">
+      <div className="max-w-3xl mx-auto px-4 md:px-6">
+        
+        {/* Section Title */}
+        <div className="text-center mb-12">
+          <span className="text-amber-600 font-semibold tracking-wider text-sm uppercase bg-amber-50 px-3 py-1 rounded-full">
+            Common Queries
+          </span>
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <p className="mt-4 text-gray-500 max-w-xl mx-auto">
+            Everything you need to know about our repair process, pricing, and customization options.
+          </p>
+        </div>
+
+        {/* FAQ List */}
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <Accordion
+              key={index}
+              title={faq.question}
+              content={faq.answer}
+              isOpen={openIndex === index}
+              onClick={() => toggleAccordion(index)}
+            />
+          ))}
+        </div>
+
       </div>
     </section>
   );
 }
-
-export default Faq;
