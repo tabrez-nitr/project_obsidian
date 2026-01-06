@@ -25,7 +25,7 @@ export default function OfferBand() {
   )
 
   return (
-    <div className="w-full bg-yellow-100 py-3 overflow-hidden">
+    <div className="w-full bg-[#fff4d6] py-3 overflow-hidden">
       <div
         // The 'group' class allows us to pause the animation on hover
         className="group flex w-full items-center"
