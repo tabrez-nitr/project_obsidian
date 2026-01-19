@@ -42,23 +42,23 @@ export default function FloatingButtons() {
       >
         {/* Continuous "Hover" effect for WhatsApp */}
         <motion.div
-            animate={{ y: [0, -5, 0] }}
-            transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-            }}
+          animate={{ y: [0, -5, 0] }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
         >
-            <a
+          <a
             href="https://wa.me/917861092110?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            >
+          >
             <button className="w-14 h-14 rounded-full bg-[#25D366] shadow-xl flex items-center justify-center active:scale-95 transition-transform duration-200">
-                <i className="text-3xl text-white ri-whatsapp-line"></i>
+              <i className="text-3xl text-white ri-whatsapp-line"></i>
             </button>
-            </a>
+          </a>
         </motion.div>
       </motion.div>
     </div>

@@ -7,10 +7,7 @@ import after1 from '@/assets/After-1.jpeg'
 import before2 from '@/assets/BeforeRepair.jpg'
 import after2 from '@/assets/AfterRepair.jpg'
 import { IconArrowsHorizontal } from "@tabler/icons-react"
-import beforRepair2 from "@/assets/repairBefore2.png"
-import afterRepair2 from "@/assets/repairAfter2.png"
-import beforeRepair1 from '@/assets/repairBefore1.png'
-import afterRepair1 from '@/assets/repairAfter1.png'
+
 
 function CompareImage() {
   return (

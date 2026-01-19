@@ -1,15 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import dryCleaning from "@/assets/dryCleaning.jpg";
+
 import sofaCleaning from "@/assets/sofaCleaning.jpg"
 import sofaRepair from "@/assets/h6.jpg";
 import sofaRepair2 from "@/assets/sofaRepair.jpg"
-import newSofa from "@/assets/h4.jpg";
-import sofaPolish from "@/assets/woodensofa.jpg";
-import sofaPolish2 from "@/assets/sofaPolish2.jpg";
+
 import sofaPolish3 from "@/assets/sofaPolish3.jpg";
-import fabric from "@/assets/sofafabric2.jpg";
-import fabric2 from "@/assets/fabricService1.jpg"
+
 import fabric3 from "@/assets/serviceFabric3.jpg"
 import Image from "next/image";
 import { CheckCircle, ChevronDown } from "lucide-react";
@@ -124,7 +121,7 @@ function Services() {
                     height={300}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
-                  
+
                   {/* --- INCREASED DARK OVERLAY (20%) --- */}
                   <div className="absolute inset-0 bg-black/25 pointer-events-none" />
                 </div>

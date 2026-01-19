@@ -1,13 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Sofa, Wrench, Brush } from "lucide-react";
+
 import sofa1 from "@/assets/h1.jpg";
-import sofa2 from "@/assets/h2.jpg";
-import sofa3 from "@/assets/h3.jpg";
-import sofa4 from "@/assets/h4_.jpg";
-import sofa5 from "@/assets/h5_.jpg"
-import sofa6 from "@/assets/h6_.jpg"
+
 import sofa7 from "@/assets/h7_.jpg"
 import sofa8 from "@/assets/h8_.jpg"
 /**
