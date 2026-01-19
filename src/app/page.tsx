@@ -7,11 +7,11 @@ import AboutUs from "@/components/AboutUs";
 import Services from "@/components/Services";
 import HeroSection from "@/components/Home";
 import { useScroll , motion } from "framer-motion"
-import OfferBand from "@/components/OfferBand";
+
 import Testimonial from "@/components/Testimonial";
 import CompareImage from "@/components/CompareImage";
 import Gallery from "@/components/Gallery";
-import Numbers from "@/components/Numbers";
+
 
 
 
