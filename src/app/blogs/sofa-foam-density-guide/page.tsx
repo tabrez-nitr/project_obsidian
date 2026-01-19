@@ -4,7 +4,7 @@ import Link from 'next/link';
 const FoamDensityMegaGuide = () => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12 bg-white sm:px-6 lg:px-8 font-sans text-gray-800">
-      
+
       {/* --- HERO SECTION --- */}
       <header className="mb-10 text-center border-b pb-10">
         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-purple-800 uppercase bg-purple-100 rounded-full">
@@ -20,13 +20,13 @@ const FoamDensityMegaGuide = () => {
 
       {/* --- CONTENT BODY --- */}
       <div className="prose prose-lg mx-auto text-gray-700">
-        
+
         {/* Introduction */}
         <p className="lead text-xl md:leading-8 mb-8">
           The most frustrating thing about buying a budget sofa is that it feels amazing in the showroom, but <strong>within 12 months, the cushions become flat pancakes</strong>.
         </p>
         <p className="mb-8">
-          In Noida’s local furniture markets, many vendors cut costs by using "Low Density" foam that looks thick but has no air resistance. At <strong>Metro Sofa</strong>, we believe an educated customer is our best customer. Let’s decode the science of comfort.
+          In Noida’s local furniture markets, many vendors cut costs by using "Low Density" foam that looks thick but has no air resistance. At <strong>Urban Sofa</strong>, we believe an educated customer is our best customer. Let’s decode the science of comfort.
         </p>
 
         {/* --- SECTION 1: WHAT IS DENSITY? --- */}
@@ -36,8 +36,8 @@ const FoamDensityMegaGuide = () => {
             Thickness ≠ Quality
           </p>
           <p className="text-gray-700 mt-2">
-            A 5-inch thick sponge can be garbage, and a 3-inch foam can be premium. 
-            <strong> Density</strong> is the weight of the foam per cubic meter. 
+            A 5-inch thick sponge can be garbage, and a 3-inch foam can be premium.
+            <strong> Density</strong> is the weight of the foam per cubic meter.
             <br /><br />
             <em>Simple Rule: The heavier the foam, the longer it lasts.</em>
           </p>
@@ -88,9 +88,9 @@ const FoamDensityMegaGuide = () => {
           Many local repair shops in Noida use "Unbranded Local Foam" (often called "Chaudhary Foam" or generic names). These foams lose their bounce (resilience) very quickly.
         </p>
         <p className="mb-6">
-           At Metro Sofa, we primarily use <strong>Sleepwell</strong> or <strong>Featherfoam</strong> sheets.
+          At Urban Sofa, we primarily use <strong>Sleepwell</strong> or <strong>Featherfoam</strong> sheets.
         </p>
-        
+
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-xl font-bold text-gray-900 mb-2">High Resilience (HR) Tech</h3>
@@ -99,16 +99,16 @@ const FoamDensityMegaGuide = () => {
             </p>
           </div>
           <div className="border p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-             <h3 className="text-xl font-bold text-gray-900 mb-2">Anti-Sag Warranty</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Anti-Sag Warranty</h3>
             <p className="text-gray-600 text-sm">
               Because we use genuine brands, we can offer you a <strong>5-Year Anti-Sagging Warranty</strong> on 40+ density foams. If it goes flat, we replace it.
             </p>
           </div>
         </div>
-        
+
         {/* --- SECTION 4: THE "SQUEEZE TEST" --- */}
         <div className="mt-12 bg-gray-100 rounded-2xl p-8 relative">
-           <span className="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">PRO TIP</span>
+          <span className="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">PRO TIP</span>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Spot a Fake? (The Knee Test)</h2>
           <p className="mb-4 text-gray-700">
             Next time you are at a furniture shop, put your knee on the sofa seat and put your full body weight on it.
@@ -126,7 +126,7 @@ const FoamDensityMegaGuide = () => {
             We bring actual foam samples to your home. Squeeze them, sit on them, and check the density stamp yourself before we install.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a 
+            <a
               href="https://wa.me/917861092110"
               className="px-8 py-4 bg-white text-purple-900 font-bold rounded-lg hover:bg-gray-100 transition-colors"
             >

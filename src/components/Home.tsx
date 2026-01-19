@@ -130,7 +130,7 @@ Restoring Warmth <br /> & Memories in <br /> Noida | Ghaziabad
           <div className="mt-5 w-full  flex gap-3">
            
                <a
-            href="https://wa.me/917861092110?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
+            href="https://wa.me/917846940025?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
             className="border-1 border-yellow-100/80 px-4 py-2 rounded-2xl text-yellow-100/80"
             target="_blank"
             rel="noopener noreferrer"

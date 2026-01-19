@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Metro Sofa Repair",
+  title: "Urban Sofa Repair",
   description: "Premium Sofa Makers & Repair in Noida , Greater Noida , Gurgaon",
   // ... rest of metadata
 };
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <body className={`${cedarville.variable}`}>
+      <body className={`${cedarville.variable}`}>
         {children}
         <FloatingButtons /> {/* 4. Add Buttons Here */}
       </body>

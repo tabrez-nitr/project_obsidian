@@ -25,7 +25,7 @@ export default function FloatingButtons() {
             ease: "easeInOut",
           }}
         >
-          <a href="tel:+917861092110" aria-label="Call Us">
+          <a href="tel:+918882349992" aria-label="Call Us">
             <button className="w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center border border-gray-100 active:scale-95 transition-transform duration-200">
               <i className="text-2xl text-[#5682B1] ri-phone-fill"></i>
             </button>

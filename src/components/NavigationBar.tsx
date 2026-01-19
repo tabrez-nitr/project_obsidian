@@ -28,9 +28,8 @@ function NavigationBar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
-        scrolled || isOpen ? "bg-[#faf9f6] shadow-sm py-2" : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 w-full z-[100] transition-all duration-300 ${scrolled || isOpen ? "bg-[#faf9f6] opacity-95 shadow-sm py-2" : "bg-transparent py-4"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-12 items-center">
@@ -39,7 +38,7 @@ function NavigationBar() {
             <h1 className={`text-xl  flex flex-col ${scrolled || isOpen ? "text-[#BCA88D]" : "text-white"}`}>
               <span className="flex items-center gap-2">
                 <i className="ri-sofa-fill"></i>
-                Metro <span className={`playwrite-in-cursive font-bold ${scrolled || isOpen ? "text-black" : "text-white"}`}>Sofa</span>
+                Urban <span className={`playwrite-in-cursive font-bold ${scrolled || isOpen ? "text-black" : "text-white"}`}>Sofa</span>
               </span>
               <span className={`text-[10px] font-normal mt-0.5 tracking-wide ${scrolled || isOpen ? "text-gray-500" : "text-white/80"}`}>
                 Sector-110, Maharishi Aashram, Noida
@@ -53,9 +52,8 @@ function NavigationBar() {
               <Link
                 key={i}
                 href={item.href}
-                className={`text-sm font-medium tracking-wide transition-colors duration-300 relative group ${
-                  scrolled ? "text-gray-700 hover:text-[#BCA88D]" : "text-white hover:text-[#BCA88D]"
-                }`}
+                className={`text-sm font-medium tracking-wide transition-colors duration-300 relative group ${scrolled ? "text-gray-700 hover:text-[#BCA88D]" : "text-white hover:text-[#BCA88D]"
+                  }`}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#BCA88D] transition-all duration-300 group-hover:w-full"></span>
@@ -67,9 +65,8 @@ function NavigationBar() {
           <div className="lg:hidden px-2 z-[101]">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md focus:outline-none transition-colors ${
-                scrolled || isOpen ? "text-gray-800" : "text-white"
-              }`}
+              className={`p-2 rounded-md focus:outline-none transition-colors ${scrolled || isOpen ? "text-gray-800" : "text-white"
+                }`}
               aria-label="Toggle menu"
             >
               {isOpen ? <i className="ri-close-line text-2xl"></i> : <i className="ri-menu-3-line text-2xl"></i>}

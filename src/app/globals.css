@@ -18,6 +18,10 @@ html, body {
 }
 
 
+/* smooth scroll effect while navigating  */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Custom property for rotation angle */
 @layer utilities {
@@ -167,3 +171,23 @@ html, body {
   font-weight: 295;
   font-style: normal;
 }
+
+@keyframes soft-ripple {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.2;
+  }
+  70% {
+    transform: scale(1.7);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.smooth-ripple {
+  animation: soft-ripple 2s ease-in-out infinite;
+}
+

@@ -4,7 +4,7 @@ import Link from 'next/link';
 const SofaRepairCostGuide = () => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12 bg-white sm:px-6 lg:px-8 font-sans text-gray-800">
-      
+
       {/* --- HERO SECTION --- */}
       <header className="mb-10 text-center border-b pb-10">
         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-amber-800 uppercase bg-amber-100 rounded-full">
@@ -20,7 +20,7 @@ const SofaRepairCostGuide = () => {
 
       {/* --- CONTENT BODY --- */}
       <div className="prose prose-lg mx-auto text-gray-700">
-        
+
         {/* Introduction */}
         <p className="lead text-xl md:leading-8 mb-8">
           In Noida and Greater Noida, you will find vendors offering to change your sofa fabric for incredibly low rates. But as the saying goes: <strong>"If it seems too good to be true, it probably is."</strong>
@@ -45,8 +45,8 @@ const SofaRepairCostGuide = () => {
           <div className="bg-white border rounded-xl p-6 shadow-sm">
             <h3 className="text-xl font-bold text-gray-900 mb-2">The "Mix-Match" Foam Scam</h3>
             <p className="text-gray-600 text-sm">
-              They put a thin layer of new foam on top, but leave the old, rotting foam underneath. It feels firm for 2 weeks, then collapses. 
-              <br/><br/>
+              They put a thin layer of new foam on top, but leave the old, rotting foam underneath. It feels firm for 2 weeks, then collapses.
+              <br /><br />
               <strong>Our Standard:</strong> We strip the sofa to the wooden frame and replace the entire block.
             </p>
           </div>
@@ -56,7 +56,7 @@ const SofaRepairCostGuide = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-2">The "Local" Adhesive</h3>
             <p className="text-gray-600 text-sm">
               Cheap glue smells terrible and loses its grip in the summer heat. This causes the fabric to become loose and wrinkly.
-              <br/><br/>
+              <br /><br />
               <strong>Our Standard:</strong> We use industrial-grade, heat-resistant adhesive (Pidilite/Fevicol SR) that never loosens.
             </p>
           </div>
@@ -98,7 +98,7 @@ const SofaRepairCostGuide = () => {
           Finally, price reflects accountability. A freelancer found on the road might switch off his phone tomorrow. A proper business provides a warranty card.
         </p>
         <div className="bg-gray-900 text-white p-6 rounded-xl">
-          <h3 className="text-xl font-bold text-yellow-400 mb-2">The Metro Sofa Guarantee</h3>
+          <h3 className="text-xl font-bold text-yellow-400 mb-2">The Urban Sofa Guarantee</h3>
           <p className="text-gray-300">
             We don't just repair; we restore. Every job comes with a <strong>6-Month Service Warranty</strong>. If a stitch opens or the fabric loosens, we come back and fix it for FREE.
           </p>
@@ -111,7 +111,7 @@ const SofaRepairCostGuide = () => {
             Send us a photo of your sofa. We will tell you exactly what needs to be done—no hidden charges, no fake promises.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a 
+            <a
               href="https://wa.me/917861092110"
               className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors shadow-lg"
             >

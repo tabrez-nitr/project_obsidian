@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NoidaExtensionMegaGuide = () => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12 bg-white sm:px-6 lg:px-8 font-sans text-gray-800">
-      
+
       {/* --- HERO SECTION --- */}
       <header className="mb-10 text-center border-b pb-10">
         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-800 uppercase bg-blue-100 rounded-full">
@@ -20,10 +20,10 @@ const NoidaExtensionMegaGuide = () => {
 
       {/* --- CONTENT BODY --- */}
       <div className="prose prose-lg mx-auto text-gray-700">
-        
+
         {/* Introduction */}
         <p className="lead text-xl md:leading-8 mb-8">
-          If you live in <strong>Greater Noida West (Noida Extension)</strong>, you know the reality: beautiful apartments, great views, but often <strong>complicated logistics</strong>. 
+          If you live in <strong>Greater Noida West (Noida Extension)</strong>, you know the reality: beautiful apartments, great views, but often <strong>complicated logistics</strong>.
         </p>
         <p className="mb-8">
           Whether you are in <em>Gaur City, Nirala Estate, Cherry County, or Supertech Eco Village</em>, buying new furniture isn't as simple as clicking "Buy Now." Between service lift restrictions and the endless construction dust, maintaining a premium home requires a different strategy.
@@ -36,11 +36,11 @@ const NoidaExtensionMegaGuide = () => {
             <strong>The Scenario:</strong> You order a stunning 7-seater L-shaped sofa online. It arrives downstairs. The delivery guys try to fit it in the lift. It doesn't fit.
           </p>
           <p className="text-red-800">
-             <strong>The Result:</strong> You are forced to pay movers ₹3,000 - ₹5,000 to hoist it up via ropes to your 18th-floor balcony. We have seen brand new sofas get scratched, bent, or broken before they even enter the living room.
+            <strong>The Result:</strong> You are forced to pay movers ₹3,000 - ₹5,000 to hoist it up via ropes to your 18th-floor balcony. We have seen brand new sofas get scratched, bent, or broken before they even enter the living room.
           </p>
         </div>
 
-        <h3 className="text-xl font-bold text-gray-900 mb-2">The Metro Sofa Solution: On-Site Repair</h3>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">The Urban Sofa Solution: On-Site Repair</h3>
         <p className="mb-8">
           We solve this by bringing the factory to your living room. Our team comes to your apartment with tools and materials.
         </p>
@@ -64,7 +64,7 @@ const NoidaExtensionMegaGuide = () => {
         <p className="mb-6">
           Noida Extension is still developing. Construction dust is a daily reality. If you buy a velvet sofa from a showroom, it acts like a magnet for fine dust particles, making it look dull in 3 months.
         </p>
-        
+
         <div className="overflow-hidden border rounded-xl shadow-sm mb-10">
           <table className="min-w-full bg-white text-left">
             <thead className="bg-gray-100">
@@ -130,13 +130,13 @@ const NoidaExtensionMegaGuide = () => {
             Get your sofa repaired comfortably at your home. No lifting, no shifting, no hidden charges.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a 
+            <a
               href="https://wa.me/917861092110"
               className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-colors shadow-lg flex items-center justify-center"
             >
               Get Quote for Noida Extension
             </a>
-            <Link 
+            <Link
               href="/#contact"
               className="px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold rounded-lg transition-colors"
             >

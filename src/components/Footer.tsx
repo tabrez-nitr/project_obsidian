@@ -9,14 +9,14 @@ export default function Footer() {
     <footer className="bg-[#faf9f6] text-gray-700 border-t border-[#e8e2d6] mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          
+
           {/* 1. Brand Section */}
           <div className="space-y-5">
             <Link href="/" className="inline-block group">
               <h2 className="text-2xl font-bold flex items-center gap-2 text-gray-900">
                 <i className="ri-sofa-fill text-[#BCA88D]"></i>
                 <span>
-                  Metro <span className="playwrite-in-cursive text-black">Sofa</span>
+                  Urban <span className="playwrite-in-cursive text-black">Sofa</span>
                 </span>
               </h2>
             </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex gap-3 pt-2">
               <SocialIcon href="#" icon="ri-facebook-fill" />
               <SocialIcon href="#" icon="ri-instagram-line" />
-              <SocialIcon href="https://wa.me/917861092110" icon="ri-whatsapp-line" />
+              <SocialIcon href="https://wa.me/917846940025" icon="ri-whatsapp-line" />
             </div>
           </div>
 
@@ -65,14 +65,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm group">
                 <i className="ri-phone-line text-xl text-[#BCA88D]" />
-                <a href="tel:+917861092110" className="text-gray-500 font-medium group-hover:text-gray-900 transition-colors">
-                  +91 78610 92110
+                <a href="tel:+918882349992" className="text-gray-500 font-medium group-hover:text-gray-900 transition-colors">
+                  +91 88823 49992
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm group">
                 <i className="ri-mail-line text-xl text-[#BCA88D]" />
-                <a href="mailto:metrosofa.business@gmail.com" className="text-gray-500 group-hover:text-gray-900 transition-colors">
-                  metrosofa.business@gmail.com
+                <a href="mailto:urbansofarepair.bsn@gmail.com" className="text-gray-500 group-hover:text-gray-900 transition-colors">
+                  urbansofarepair.bsn@gmail.com
                 </a>
               </li>
             </ul>
@@ -81,7 +81,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-          <p>&copy; {currentYear} Metro Sofa Repair. All rights reserved.</p>
+          <p>&copy; {currentYear} Urban Sofa Repair. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-[#BCA88D] transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-[#BCA88D] transition-colors">Terms of Use</Link>
@@ -110,8 +110,8 @@ function SocialIcon({ href, icon }: { href: string; icon: string }) {
 function FooterLink({ href, label }: { href: string; label: string }) {
   return (
     <li>
-      <Link 
-        href={href} 
+      <Link
+        href={href}
         className="text-sm text-gray-500 hover:text-[#BCA88D] hover:pl-2 transition-all duration-300 block"
       >
         {label}
