@@ -50,7 +50,7 @@ export default function FloatingButtons() {
           }}
         >
           <a
-            href="https://wa.me/917861092110?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
+            href="https://wa.me/917846940025?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
