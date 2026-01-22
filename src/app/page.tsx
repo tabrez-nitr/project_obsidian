@@ -20,17 +20,17 @@ export default function Home() {
   return (
    <div className="bg-gray-50">
     <HeroSection/>
-        {/* <OfferBand/> */}
+    
      
 
        <NavigationBar/>
       <Services/>
-      {/* <Numbers/> */}
+  
       <AboutUs/>
       <CompareImage/>
       
       <Testimonial/>
-      {/* <OfferBand/> */}
+     
        <Gallery/>
       <Faq/>
 
@@ -41,14 +41,7 @@ export default function Home() {
         style={{
           scaleX : scrollYProgress
         }}></motion.div>  
- {/* 
-//         // <div className="h-screen flex items-center justify-center font-bold text-center px-4">
-//         //   Service is not available at the moment.
-//         // </div> 
-  
-         {/* <div className="min-h-screen min-w-screen flex justify-center items-center">
-          Service is not available at the moment.
-         </div> */}
+
         </div>
   );
 }

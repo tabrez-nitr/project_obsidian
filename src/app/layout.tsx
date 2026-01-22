@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Cedarville_Cursive } from "next/font/google";
 import FloatingButtons from "@/components/FLoatiingButtons"; // 2. Import Buttons
 import "./globals.css";
+import Script from 'next/script'
 
 // 3. Add this Viewport export to lock zoom
 export const viewport: Viewport = {
@@ -32,6 +33,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cedarville.variable}`}>
+
+
+        {/* google tag  */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17826165480" 
+          strategy="afterInteractive" 
+        />
+        {/* Intialize google tag with config id  */}
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17826165480');
+          `}
+        </Script>
+
         {children}
         <FloatingButtons /> {/* 4. Add Buttons Here */}
       </body>
