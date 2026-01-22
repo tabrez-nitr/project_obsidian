@@ -1,13 +1,51 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 export default function FloatingButtons() {
+
+   const handleCallClick = (e: { preventDefault: () => void; }) => {
+    // 1. Stop the phone dialer from opening immediately
+    e.preventDefault(); 
+    
+    const phoneNumber = "tel:+918882349992"; // Your target number
+
+    const openDialer = () => {
+      window.location.href = phoneNumber;
+    };
+
+    // 2. Fire the Google Ads Conversion
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17826165480/RkpsCLqDk-obEOjllrRC', // Your ID
+        'event_callback': () => {
+          // 3. Open dialer AFTER Google records the click
+          openDialer();
+        }
+      });
+    } else {
+      // Fallback: If ad-blocker is on, just open dialer immediately
+      openDialer();
+    }
+    
+    return false;
+  };
+   
+
   return (
     <div
       className="fixed bottom-0 left-0 right-0 z-[90] p-6 flex justify-between items-end pointer-events-none"
       style={{ willChange: "transform", transform: "translateZ(0)" }}
     >
+
+
+    
+
       {/* Phone Button (Left) - "Wiggle" Animation */}
       <motion.div
         className="pointer-events-auto"
@@ -25,7 +63,11 @@ export default function FloatingButtons() {
             ease: "easeInOut",
           }}
         >
-          <a href="tel:+918882349992" aria-label="Call Us">
+          <a 
+          href="tel:+918882349992" 
+          onClick={handleCallClick}
+          aria-label="Call Us"
+        >
             <button className="w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center border border-gray-100 active:scale-95 transition-transform duration-200">
               <i className="text-2xl text-[#5682B1] ri-phone-fill"></i>
             </button>
