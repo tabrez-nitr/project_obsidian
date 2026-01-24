@@ -64,7 +64,7 @@ export default function FloatingButtons() {
           }}
         >
           <a 
-          href="tel:+918882349992" 
+          href="tel:+918018987675" 
           onClick={handleCallClick}
           aria-label="Call Us"
         >
