@@ -13,7 +13,7 @@ export default function FloatingButtons() {
     // 1. Stop the phone dialer from opening immediately
     e.preventDefault(); 
     
-    const phoneNumber = "tel:+918882349992"; // Your target number
+    const phoneNumber = "tel:+918018987675"; // Your target number
 
     const openDialer = () => {
       window.location.href = phoneNumber;
